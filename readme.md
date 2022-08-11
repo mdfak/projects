@@ -1,5 +1,7 @@
-#heading one
+# TYTUŁ
 
-##smaller heading xD
+## PODTYTUŁ
+
+### PODPODTYTUŁ
 
 etc.
