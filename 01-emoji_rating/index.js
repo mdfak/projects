@@ -14,6 +14,8 @@ function updateRating(index) {
   starsEl.forEach((starsEl, idx) => {
     if (idx < index + 1) {
       starsEl.classList.add("active");
+      console.log(idx);
+      console.log(index);
     } else {
       starsEl.classList.remove("active");
     }

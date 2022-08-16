@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+body {
+  margin: 0;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.stats-container {
+  margin: 20px;
+  border: 3px dotted green;
+  min-width: 200px;
+  height: 100px;
+  position: relative;
+  padding: 20px;
+  font-family: "Fraunces", serif;
+}
+.stats-container h4 {
+  white-space: nowrap;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.icon {
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.counter {
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+  color: green;
+}
