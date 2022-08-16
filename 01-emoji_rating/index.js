@@ -2,7 +2,7 @@ const starsEl = document.querySelectorAll(".fa-star");
 const emojisEl = document.querySelectorAll(".fa-regular");
 const colorsArr = ["red", "orange", "lightblue", "lightgreen", "green"];
 
-updateRating(0);
+updateRating(4);
 
 starsEl.forEach((starsEl, index) => {
   starsEl.addEventListener("click", () => {
