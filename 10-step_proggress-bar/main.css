@@ -5,6 +5,7 @@ body {
   justify-content: center;
   height: 100vh;
   align-items: center;
+  background-color: yellow;
 }
 
 .steps-container {
@@ -12,9 +13,8 @@ body {
   width: 500px;
   align-items: center;
   margin-bottom: 50px;
-}
-.start-step .fa-regular {
-  color: green;
+  justify-content: space-between;
+  position: relative;
 }
 
 .step {
@@ -22,27 +22,76 @@ body {
   align-items: center;
 }
 
-.line {
+.step.start {
+  position: relative;
+}
+.step.start small {
+  color: green;
+  text-align: center;
+  font-family: cursive;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+}
+
+.line-back {
   background: gray;
-  width: 100px;
+  width: 100%;
   height: 5px;
+  position: absolute;
+  z-index: -1;
+  transition: 0.3s linear width;
+}
+.line-front {
+  background: green;
+  width: 0;
+  height: 5px;
+  position: absolute;
+  z-index: -1;
+  transition: 0.3s linear width;
 }
 
 .fa-regular {
   font-size: 3rem;
   color: grey;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .btn {
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: ;
+  padding: 20px 40px;
+  margin: 0 20px;
+  background-color: slateblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.btn .fa-solid {
+  color: white;
+  font-size: 20px;
 }
 
-.fa-regular.active {
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  background-color: lightgray;
+}
+
+.fa-regular.checked {
   color: green;
 }
 
-.line.active {
-  background: green;
+@media (max-width: 500px) {
+  .steps-container {
+    width: 90vw;
+  }
 }
