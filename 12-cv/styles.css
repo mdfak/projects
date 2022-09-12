@@ -2,8 +2,6 @@
   margin: 0;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
-
 .box {
   display: grid;
   grid-template-columns: 15% 80%;
@@ -15,22 +13,22 @@
   font-size: 28px;
 }
 
-p {
+p,
+li {
   font-size: 12px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 24px;
   text-transform: uppercase;
   color: rgb(191, 144, 0);
   padding: 10px;
-  font-family: "Roboto", sans-serif;
 }
 
 .container {
-  border: 2px solid white;
-  width: 300px;
+  border: 2px solid black;
+  width: 250px;
   padding-left: 20px;
 }
 
@@ -56,7 +54,7 @@ span {
 }
 
 .right {
-  width: 600px;
+  width: 350px;
 }
 
 .box-edu {
@@ -80,4 +78,8 @@ span {
 
 #bold {
   font-weight: bold;
+}
+
+.container.right p {
+  letter-spacing: 0.75px;
 }
