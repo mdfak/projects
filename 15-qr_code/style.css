@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --primaryFontClr: hsl(218, 44%, 22%);
+  --secondaryFontClr: hsl(220, 15%, 55%);
+  --backgroundClr: hsl(212, 45%, 89%);
+  --FontFamilly: "Outfit", sans-serif;
+  --border-radius: 15px;
+}
+
+body {
+  min-width: 1440px;
+  background: var(--backgroundClr);
+}
+
+.section-center {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--clr-white);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 325px;
+  max-height: 500px;
+  padding: 15px;
+
+  border-radius: var(--border-radius);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.content-container {
+  text-align: center;
+  font-family: var(--FontFamilly);
+}
+
+.title {
+  color: var(--primaryFontClr);
+  margin: 20px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.description {
+  color: var(--secondaryFontClr);
+  font-size: 15px;
+  margin: 20px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    margin: 20px 30px;
+  }
+}
